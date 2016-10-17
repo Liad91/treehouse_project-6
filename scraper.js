@@ -1,4 +1,4 @@
-'use strict';
+'use-strict';
 
 /** Load the require modules */
 var fs = require('fs');
@@ -82,7 +82,7 @@ request(url + 'shirts.php', function (error, response, body) {
             /** Build the csv file from products array. */
             jsoncsv.csvBuffered(products, fields, function(err, csv) {
               if (err) {
-                console.log(errMsg)
+                console.log(errMsg);
                 errLoger(err.message, date);
               }
 
@@ -102,7 +102,7 @@ request(url + 'shirts.php', function (error, response, body) {
               /** Write the file. if the file already exist, rewrite it. */
               fs.writeFile(__dirname + '/data/' + fileName, csv, function(err) {
                 if (err) {
-                  console.log(errMsg)
+                  console.log(errMsg);
                   errLoger(err.message, date);
                 }
                 else {
