@@ -25,21 +25,21 @@ Install the dependencies and devDependencies and run the application.
 
 ```
 $ npm install
-$ node scraper.js
+$ npm start
 ```
 
 For production environments...
 
 ```
 $ NODE_ENV=production npm install
-$ node scraper.js
+$ npm start
 ```
 
 ### Linting tool `only in dev mode`
 
 Run this line to check your code for syntax errors
 ```
-$ jshint scraper.js
+$ npm run lint
 ```
 
 ### Error handling
